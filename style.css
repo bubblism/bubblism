@@ -46,6 +46,7 @@ nav a {
 
 .intro {
     margin: 2rem 0; /* 设置顶部和底部的外边距为 2rem */
+    margin-top: 20px
 }
 
 .intro h2 {
@@ -55,6 +56,7 @@ nav a {
     line-height: 1.2; /* 设置行高稍紧凑 */
     margin-bottom: 1rem; /* 底部外边距为 1rem */
     text-align: center; /* 文本居中对齐 */
+    margin-top: 50px
 }
 
 .intro h2::after {
@@ -76,7 +78,7 @@ nav a {
     display: flex; /* 使用 Flex 布局 */
     justify-content: center; /* 按钮水平居中 */
     align-items: center; /* 按钮垂直居中 */
-    margin-top: 50px; /* 设置按钮顶部的外边距为 20px */
+    margin-top: 90px; /* 设置按钮顶部的外边距为 20px */
 }
 
 .buttons .btn {
