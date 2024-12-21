@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #e3f2fd, #fce4ec);
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #ffccbc;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.intro {
+    margin: 2rem 0;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.intro h2::after {
+    content: "Where Bubbles Meet Jam";
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ffab91;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background: #ffccbc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
