@@ -15,8 +15,8 @@ body {
 header {
     background: #ffccbc; /* 设置导航栏背景颜色为橙色 */
     color: #fff; /* 设置导航栏文字颜色为白色 */
-    text-align: center;
-    padding: 20px 0;
+    text-align: center; /* 让所有内容居中 */
+    padding: 20px 0; /* 给 header 增加内边距 */
 }
 
 /* 主标题样式 */
@@ -36,46 +36,19 @@ header h1 {
     border: 5px solid #ffab91; /* 图片周围添加橙色边框 */
 }
 
-/* 按钮样式 */
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px; /* 调整按钮的上间距 */
-}
-
-.buttons .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background: #ffab91;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* 页脚样式 */
-footer {
-    background: #ffccbc; /* 设置页脚背景颜色为橙色 */
-    color: #fff; /* 设置页脚文字颜色为白色 */
-    padding: 10px 0; /* 页脚上下内边距为 1rem */
-    text-align: center; /* 页脚文字居中对齐 */
-    margin-top: auto; /* 确保页脚始终固定在页面底部 */
-}
-
 /* intro 部分样式 */
 .intro {
+    text-align: center; /* 确保内容居中 */
     margin-top: 40px; /* 设置顶部外边距为 40px */
-    text-align: center; /* 确保文本居中 */
 }
 
 .intro h2 {
-    font-size: 4rem; /* 主标题字体大小更大 */
-    font-weight: 300; /* 设置为常规粗细 */
-    font-family: 'Cascadia Code', sans-serif; /* 使用简约的英文字体 */
-    line-height: 1.2; /* 设置行高稍紧凑 */
-    margin-bottom: 1rem; /* 底部外边距为 1rem */
+    font-size: 4rem; /* 设置主标题字体大小 */
+    font-weight: 300;
+    font-family: 'Cascadia Code', sans-serif;
+    line-height: 1.2;
+    margin-top: 20px; /* 给标题顶部增加一些间距 */
+    margin-bottom: 1rem;
 }
 
 .intro h2::after {
@@ -87,3 +60,21 @@ footer {
     font-family: 'Cascadia Code', sans-serif; /* 副标题使用一致的字体 */
     color: #555; /* 副标题颜色稍暗 */
 }
+
+/* 按钮样式 */
+.buttons {
+    display: flex;
+    justify-content: center; /* 按钮水平居中 */
+    align-items: center; /* 按钮垂直居中 */
+    margin-top: 50px; /* 调整按钮的上间距 */
+}
+
+.buttons .btn {
+    display: inline-block; /* 让按钮保持为行内块元素 */
+    margin: 10px; /* 每个按钮的外边距为 10px */
+    padding: 10px 20px; /* 按钮内容的内边距为 10px 上下，20px 左右 */
+    background: #ffab91; /* 按钮背景颜色为淡橙色 */
+    color: #fff; /* 按钮文字颜色为白色 */
+    border-radius: 5px; /* 按钮四角圆滑，半径为 5px */
+    text-decoration: none; /* 去掉按钮文字的下划线 */
+    font-s
