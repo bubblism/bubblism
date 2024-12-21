@@ -14,12 +14,24 @@ body {
 header {
     background: #ffccbc;
     color: #fff;
-    padding: 1rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px; /* 确保导航栏高度 */
 }
 
 header h1 {
     font-family: 'Pacifico', cursive;
     margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 60px; /* 确保导航栏居中对齐 */
 }
 
 nav a {
@@ -33,18 +45,19 @@ nav a {
 }
 
 .intro h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    font-family: 'Arial', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Courier New', sans-serif;
     line-height: 1.5;
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .intro h2::after {
-    content: "Where Bubbles Meet Jam";
+    content: "Where Bubbles Meet Jam...";
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Courier New', sans-serif;
     font-weight: 300;
     margin-top: 0.5rem;
 }
@@ -71,3 +84,4 @@ footer {
     text-align: center;
     margin-top: auto;
 }
+
