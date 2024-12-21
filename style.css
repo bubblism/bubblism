@@ -1,87 +1,98 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+/* 导入 Google Fonts 的 Pacifico 字体，用于标题的手写风格 */
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(180deg, #e3f2fd, #fce4ec);
-    color: #333;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Arial', sans-serif; /* 设置全局字体为 Arial，备用字体为 sans-serif */
+    background: linear-gradient(180deg, #e3f2fd, #fce4ec); /* 设置渐变背景颜色，从上到下过渡 */
+    color: #333; /* 设置全局文字颜色为深灰色 */
+    margin: 0; /* 清除页面默认的外边距 */
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: column; /* 子元素按列方向排列 */
+    min-height: 100vh; /* 页面最小高度为视口高度 */
 }
 
 header {
-    background: #ffccbc;
-    color: #fff;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 60px; /* 确保导航栏高度 */
+    background: #ffccbc; /* 设置导航栏背景颜色为橙色 */
+    color: #fff; /* 设置导航栏文字颜色为白色 */
+    padding: 0; /* 清除内边距 */
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: column; /* 子元素按列方向排列 */
+    align-items: center; /* 水平居中对齐 */
+    justify-content: center; /* 垂直居中对齐 */
+    width: 100%; /* 导航栏宽度占满整个页面 */
+    box-sizing: border-box; /* 包括内边距在宽高计算内 */
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive;
-    margin: 0;
+    font-family: 'Pacifico', cursive; /* 标题使用手写风格字体 */
+    margin: 0; /* 清除默认外边距 */
 }
 
 nav {
-    display: flex;
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-    height: 60px; /* 确保导航栏居中对齐 */
+    display: flex; /* 使用 Flex 布局 */
+    justify-content: center; /* 导航链接水平居中 */
+    align-items: center; /* 导航链接垂直居中 */
+    width: 100%; /* 导航宽度占满页面 */
+    height: 60px; /* 设置导航栏高度为 60px */
+    box-sizing: border-box; /* 包括内边距在宽高计算内 */
 }
 
 nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
+    color: #fff; /* 导航链接文字颜色为白色 */
+    margin: 0 15px; /* 每个链接之间有左右 15px 的间距 */
+    text-decoration: none; /* 去掉链接的下划线 */
 }
 
 .intro {
-    margin: 2rem 0;
+    margin: 2rem 0; /* 设置顶部和底部的外边距为 2rem */
 }
 
 .intro h2 {
-    font-size: 4rem;
-    font-weight: 400;
-    font-family: 'Courier New', sans-serif;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 4rem; /* 主标题字体大小更大 */
+    font-weight: 400; /* 设置为常规粗细 */
+    font-family: 'Cascadia Code', sans-serif; /* 使用简约的英文字体 */
+    line-height: 1.2; /* 设置行高稍紧凑 */
+    margin-bottom: 1rem; /* 底部外边距为 1rem */
+    text-align: center; /* 文本居中对齐 */
 }
 
 .intro h2::after {
-    content: "Where Bubbles Meet Jam...";
-    display: block;
-    font-size: 2.5rem;
-    font-family: 'Courier New', sans-serif;
-    font-weight: 300;
-    margin-top: 0.5rem;
+    content: "Where Bubbles Meet Jam..."; /* 添加副标题 */
+    display: block; /* 副标题换行显示 */
+    font-size: 2rem; /* 副标题字体大小稍小 */
+    font-weight: 300; /* 副标题字体较细 */
+    margin-top: 1rem; /* 顶部外边距为 1rem */
+    font-family: 'Cascadia Code', sans-serif; /* 副标题使用一致的字体 */
+    color: #555; /* 副标题颜色稍暗 */
 }
 
 .avatar {
-    width: 100px;
-    border-radius: 50%;
+    width: 100px; /* 设置图片宽度为 100px */
+    border-radius: 50%; /* 将图片变为圆形 */
+}
+
+.buttons {
+    display: flex; /* 使用 Flex 布局 */
+    justify-content: center; /* 按钮水平居中 */
+    align-items: center; /* 按钮垂直居中 */
+    margin-top: 20px; /* 设置按钮顶部的外边距为 20px */
 }
 
 .buttons .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background: #ffab91;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
+    display: inline-block; /* 让按钮保持为行内块元素 */
+    margin: 10px; /* 每个按钮的外边距为 10px */
+    padding: 10px 20px; /* 按钮内容的内边距为 10px 上下，20px 左右 */
+    background: #ffab91; /* 按钮背景颜色为淡橙色 */
+    color: #fff; /* 按钮文字颜色为白色 */
+    border-radius: 5px; /* 按钮四角圆滑，半径为 5px */
+    text-decoration: none; /* 去掉按钮文字的下划线 */
 }
 
 footer {
-    background: #ffccbc;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    margin-top: auto;
+    background: #ffccbc; /* 设置页脚背景颜色为橙色 */
+    color: #fff; /* 设置页脚文字颜色为白色 */
+    padding: 1rem 0; /* 页脚上下内边距为 1rem */
+    text-align: center; /* 页脚文字居中对齐 */
+    margin-top: auto; /* 确保页脚始终固定在页面底部 */
 }
-
