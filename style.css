@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
-/* 导入 Google Fonts 的 Pacifico 字体，用于标题的手写风格 */
 
+/* 全局样式 */
 body {
     font-family: 'Arial', sans-serif; /* 设置全局字体为 Arial，备用字体为 sans-serif */
     background: linear-gradient(180deg, #e3f2fd, #fce4ec); /* 设置渐变背景颜色，从上到下过渡 */
@@ -12,49 +11,63 @@ body {
     min-height: 100vh; /* 页面最小高度为视口高度 */
 }
 
+/* 头部样式 */
 header {
     background: #ffccbc; /* 设置导航栏背景颜色为橙色 */
     color: #fff; /* 设置导航栏文字颜色为白色 */
-    padding: 0; /* 清除内边距 */
-    display: flex; /* 使用 Flex 布局 */
-    flex-direction: column; /* 子元素按列方向排列 */
-    align-items: center; /* 水平居中对齐 */
-    justify-content: center; /* 垂直居中对齐 */
-    width: 100%; /* 导航栏宽度占满整个页面 */
-    box-sizing: border-box; /* 包括内边距在宽高计算内 */
+    text-align: center;
+    padding: 20px 0;
 }
 
+/* 主标题样式 */
 header h1 {
     font-family: 'Pacifico', cursive; /* 标题使用手写风格字体 */
     margin: 0; /* 清除默认外边距 */
 }
 
-nav {
-    display: flex; /* 使用 Flex 布局 */
-    justify-content: center; /* 导航链接水平居中 */
-    align-items: center; /* 导航链接垂直居中 */
-    width: 100%; /* 导航宽度占满页面 */
-    height: 60px; /* 设置导航栏高度为 60px */
-    box-sizing: border-box; /* 包括内边距在宽高计算内 */
-}
+/* 图片样式 */
 .profile-picture {
-    width: 150px; /* 设置图片宽度 */
-    height: 150px; /* 设置图片高度 */
-    border-radius: 50%; /* 圆形边框 */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 圆形图片 */
     object-fit: cover; /* 确保图片内容适应圆形容器 */
-    display: block; /* 设置图片为块级元素 */
+    display: block; /* 图片块级显示 */
     margin: 0 auto 20px; /* 图片居中，底部外边距为 20px */
     border: 5px solid #ffab91; /* 图片周围添加橙色边框 */
-
-nav a {
-    color: #fff; /* 导航链接文字颜色为白色 */
-    margin: 0 15px; /* 每个链接之间有左右 15px 的间距 */
-    text-decoration: none; /* 去掉链接的下划线 */
 }
 
+/* 按钮样式 */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* 调整按钮的上间距 */
+}
+
+.buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ffab91;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* 页脚样式 */
+footer {
+    background: #ffccbc; /* 设置页脚背景颜色为橙色 */
+    color: #fff; /* 设置页脚文字颜色为白色 */
+    padding: 10px 0; /* 页脚上下内边距为 1rem */
+    text-align: center; /* 页脚文字居中对齐 */
+    margin-top: auto; /* 确保页脚始终固定在页面底部 */
+}
+
+/* intro 部分样式 */
 .intro {
-    margin: 2rem 0; /* 设置顶部和底部的外边距为 2rem */
-    margin-top: 40px
+    margin-top: 40px; /* 设置顶部外边距为 40px */
+    text-align: center; /* 确保文本居中 */
 }
 
 .intro h2 {
@@ -63,8 +76,6 @@ nav a {
     font-family: 'Cascadia Code', sans-serif; /* 使用简约的英文字体 */
     line-height: 1.2; /* 设置行高稍紧凑 */
     margin-bottom: 1rem; /* 底部外边距为 1rem */
-    text-align: center; /* 文本居中对齐 */
-    margin-top: 70px
 }
 
 .intro h2::after {
@@ -75,34 +86,4 @@ nav a {
     margin-top: 1rem; /* 顶部外边距为 1rem */
     font-family: 'Cascadia Code', sans-serif; /* 副标题使用一致的字体 */
     color: #555; /* 副标题颜色稍暗 */
-}
-
-.avatar {
-    width: 100px; /* 设置图片宽度为 100px */
-    border-radius: 50%; /* 将图片变为圆形 */
-}
-
-.buttons {
-    display: flex; /* 使用 Flex 布局 */
-    justify-content: center; /* 按钮水平居中 */
-    align-items: center; /* 按钮垂直居中 */
-    margin-top: 110px; /* 设置按钮顶部的外边距为 20px */
-}
-
-.buttons .btn {
-    display: inline-block; /* 让按钮保持为行内块元素 */
-    margin: 10px; /* 每个按钮的外边距为 10px */
-    padding: 10px 20px; /* 按钮内容的内边距为 10px 上下，20px 左右 */
-    background: #ffab91; /* 按钮背景颜色为淡橙色 */
-    color: #fff; /* 按钮文字颜色为白色 */
-    border-radius: 5px; /* 按钮四角圆滑，半径为 5px */
-    text-decoration: none; /* 去掉按钮文字的下划线 */
-}
-
-footer {
-    background: #ffccbc; /* 设置页脚背景颜色为橙色 */
-    color: #fff; /* 设置页脚文字颜色为白色 */
-    padding: 1rem 0; /* 页脚上下内边距为 1rem */
-    text-align: center; /* 页脚文字居中对齐 */
-    margin-top: auto; /* 确保页脚始终固定在页面底部 */
 }
