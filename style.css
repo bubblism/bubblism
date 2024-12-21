@@ -37,6 +37,14 @@ nav {
     height: 60px; /* 设置导航栏高度为 60px */
     box-sizing: border-box; /* 包括内边距在宽高计算内 */
 }
+.profile-picture {
+    width: 150px; /* 设置图片宽度 */
+    height: 150px; /* 设置图片高度 */
+    border-radius: 50%; /* 圆形边框 */
+    object-fit: cover; /* 确保图片内容适应圆形容器 */
+    display: block; /* 设置图片为块级元素 */
+    margin: 0 auto 20px; /* 图片居中，底部外边距为 20px */
+    border: 5px solid #ffab91; /* 图片周围添加橙色边框 */
 
 nav a {
     color: #fff; /* 导航链接文字颜色为白色 */
@@ -46,7 +54,7 @@ nav a {
 
 .intro {
     margin: 2rem 0; /* 设置顶部和底部的外边距为 2rem */
-    margin-top: 20px
+    margin-top: 40px
 }
 
 .intro h2 {
@@ -56,7 +64,7 @@ nav a {
     line-height: 1.2; /* 设置行高稍紧凑 */
     margin-bottom: 1rem; /* 底部外边距为 1rem */
     text-align: center; /* 文本居中对齐 */
-    margin-top: 50px
+    margin-top: 70px
 }
 
 .intro h2::after {
@@ -78,7 +86,7 @@ nav a {
     display: flex; /* 使用 Flex 布局 */
     justify-content: center; /* 按钮水平居中 */
     align-items: center; /* 按钮垂直居中 */
-    margin-top: 90px; /* 设置按钮顶部的外边距为 20px */
+    margin-top: 110px; /* 设置按钮顶部的外边距为 20px */
 }
 
 .buttons .btn {
