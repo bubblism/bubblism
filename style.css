@@ -50,7 +50,7 @@ nav a {
 
 .intro h2 {
     font-size: 4rem; /* 主标题字体大小更大 */
-    font-weight: 400; /* 设置为常规粗细 */
+    font-weight: 300; /* 设置为常规粗细 */
     font-family: 'Cascadia Code', sans-serif; /* 使用简约的英文字体 */
     line-height: 1.2; /* 设置行高稍紧凑 */
     margin-bottom: 1rem; /* 底部外边距为 1rem */
@@ -60,7 +60,7 @@ nav a {
 .intro h2::after {
     content: "Where Bubbles Meet Jam..."; /* 添加副标题 */
     display: block; /* 副标题换行显示 */
-    font-size: 2rem; /* 副标题字体大小稍小 */
+    font-size: 2.5rem; /* 副标题字体大小稍小 */
     font-weight: 300; /* 副标题字体较细 */
     margin-top: 1rem; /* 顶部外边距为 1rem */
     font-family: 'Cascadia Code', sans-serif; /* 副标题使用一致的字体 */
@@ -76,7 +76,7 @@ nav a {
     display: flex; /* 使用 Flex 布局 */
     justify-content: center; /* 按钮水平居中 */
     align-items: center; /* 按钮垂直居中 */
-    margin-top: 20px; /* 设置按钮顶部的外边距为 20px */
+    margin-top: 50px; /* 设置按钮顶部的外边距为 20px */
 }
 
 .buttons .btn {
