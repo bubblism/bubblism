@@ -1,80 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
-
-/* 全局样式 */
-body {
-    font-family: 'Arial', sans-serif; /* 设置全局字体为 Arial，备用字体为 sans-serif */
-    background: linear-gradient(180deg, #e3f2fd, #fce4ec); /* 设置渐变背景颜色，从上到下过渡 */
-    color: #333; /* 设置全局文字颜色为深灰色 */
-    margin: 0; /* 清除页面默认的外边距 */
-    display: flex; /* 使用 Flex 布局 */
-    flex-direction: column; /* 子元素按列方向排列 */
-    min-height: 100vh; /* 页面最小高度为视口高度 */
-}
-
-/* 头部样式 */
-header {
-    background: #ffccbc; /* 设置导航栏背景颜色为橙色 */
-    color: #fff; /* 设置导航栏文字颜色为白色 */
-    text-align: center; /* 让所有内容居中 */
-    padding: 20px 0; /* 给 header 增加内边距 */
-}
-
-/* 主标题样式 */
-header h1 {
-    font-family: 'Pacifico', cursive; /* 标题使用手写风格字体 */
-    margin: 0; /* 清除默认外边距 */
-}
-
-/* 图片样式 */
-.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* 圆形图片 */
-    object-fit: cover; /* 确保图片内容适应圆形容器 */
-    display: block; /* 图片块级显示 */
-    margin: 0 auto 20px; /* 图片居中，底部外边距为 20px */
-    border: 5px solid #ffab91; /* 图片周围添加橙色边框 */
-}
-
-/* intro 部分样式 */
-.intro {
-    text-align: center; /* 确保内容居中 */
-    margin-top: 40px; /* 设置顶部外边距为 40px */
-}
-
-.intro h2 {
-    font-size: 4rem; /* 设置主标题字体大小 */
-    font-weight: 300;
-    font-family: 'Cascadia Code', sans-serif;
-    line-height: 1.2;
-    margin-top: 20px; /* 给标题顶部增加一些间距 */
-    margin-bottom: 1rem;
-}
-
-.intro h2::after {
-    content: "Where Bubbles Meet Jam..."; /* 添加副标题 */
-    display: block; /* 副标题换行显示 */
-    font-size: 2.5rem; /* 副标题字体大小稍小 */
-    font-weight: 300; /* 副标题字体较细 */
-    margin-top: 1rem; /* 顶部外边距为 1rem */
-    font-family: 'Cascadia Code', sans-serif; /* 副标题使用一致的字体 */
-    color: #555; /* 副标题颜色稍暗 */
-}
-
-/* 按钮样式 */
-.buttons {
-    display: flex;
-    justify-content: center; /* 按钮水平居中 */
-    align-items: center; /* 按钮垂直居中 */
-    margin-top: 50px; /* 调整按钮的上间距 */
-}
-
-.buttons .btn {
-    display: inline-block; /* 让按钮保持为行内块元素 */
-    margin: 10px; /* 每个按钮的外边距为 10px */
-    padding: 10px 20px; /* 按钮内容的内边距为 10px 上下，20px 左右 */
-    background: #ffab91; /* 按钮背景颜色为淡橙色 */
-    color: #fff; /* 按钮文字颜色为白色 */
-    border-radius: 5px; /* 按钮四角圆滑，半径为 5px */
-    text-decoration: none; /* 去掉按钮文字的下划线 */
-    font-s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubblism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title-section">
+            <h1>Bubblism</h1>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="7279A455D805EAC5403C3E45A5268D44.png" alt="Profile Picture" class="profile-picture">
+            <h2>Welcome to Bubblism</h2>
+        </section>
+        <div class="buttons">
+            <a href="bubbles.html" class="btn">Bubbles</a>
+            <a href="jam-diary.html" class="btn">Jam Diary</a>
+            <a href="about.html" class="btn">About</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bubblism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
