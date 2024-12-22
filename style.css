@@ -1,30 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubblism</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="title-section">
-            <h1>Bubblism</h1>
-        </div>
-    </header>
-    <main>
-        <section class="intro">
-            <img src="7279A455D805EAC5403C3E45A5268D44.png" alt="Profile Picture" class="profile-picture">
-            <h2>Welcome to Bubblism</h2>
-        </section>
-        <div class="buttons">
-            <a href="bubbles.html" class="btn">Bubbles</a>
-            <a href="jam-diary.html" class="btn">Jam Diary</a>
-            <a href="about.html" class="btn">About</a>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Bubblism. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #e3f2fd, #fce4ec);
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 头部样式 */
+header .title-section {
+    background: #ffccbc; /* 橙色背景只覆盖标题部分 */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    color: #fff; /* 标题文字为白色 */
+}
+
+/* 图片样式 */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #ffab91;
+}
+
+/* intro 部分样式 */
+.intro {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.intro h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: 'Cascadia Code', sans-serif;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+}
+
+.intro h2::after {
+    content: "Where Bubbles Meet Jam...";
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-family: 'Cascadia Code', sans-serif;
+    color: #555;
+}
+
+/* 按钮样式 */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ffab91;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* 页脚样式 */
+footer {
+    background: #ffccbc; /* 页脚背景为橙色 */
+    color: #fff; /* 页脚文字为白色 */
+    padding: 10px 0;
+    text-align: center; /* 页脚文字居中 */
+    margin-top: auto;
+}
